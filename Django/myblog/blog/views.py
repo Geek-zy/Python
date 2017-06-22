@@ -31,5 +31,5 @@ def edit_action(request):
 	article = models.Article.objects.get(pk=article_id)
 	article.title = title
 	article.content = content
-	#article = save()
+	article.save()
 	return render(request, 'blog/article_page.html', {'article': article})
