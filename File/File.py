@@ -25,3 +25,10 @@ print ("读取字符:", G_read)
 # 关闭打开的文件
 fp.close()
 
+# 推荐使用 with，不用 close 关闭
+with open('File.txt', 'a') as f:
+    f.write("-Ha-")
+
+with open('File.txt', 'r') as f:
+    print(f.read())
+
