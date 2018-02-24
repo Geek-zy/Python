@@ -18,4 +18,6 @@ print (Date.status_code)
 print (Date.url)
 # 获取返回数据
 print (Date.text)
+# 获取返回 json 数据
+print (Date.json())
 
