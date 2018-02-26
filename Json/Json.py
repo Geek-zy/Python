@@ -3,7 +3,7 @@
 
 import json
 
-Data_Array = [ { 'a' : 1, 'b' : 2, 'c' : 3, 'd' : 4, 'e' : 5 } ] 
+Data_Array = [{ 'a' : 1, 'b' : 2, 'c' : 3, 'd' : 4, 'e' : 5 }] 
 Data_Json  = '{"a":1,"b":2,"c":3,"d":4,"e":5}'
 
 # 将 Python 对象编码成 JSON 字符串

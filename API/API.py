@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-# 安装Python包管理工具pip ==> sudo apt-get install python-pip
-# 安装requests ==> pip install requests
+# 安装Python包管理工具pip3 ==> sudo apt-get install python3-pip
+# 安装requests ==> pip3 install requests
 
 import requests
 

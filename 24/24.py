@@ -6,6 +6,7 @@ import random
 
 while True:
 
+    # 匿名函数
     four = lambda :random.choice(['+', '-', '*', '/'])
     data = lambda :random.choice(range(1, 21))
 

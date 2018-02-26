@@ -10,3 +10,8 @@ while i <= 9:
     print()
     i += 1
 
+# 列表生成式
+_list = ["%d * %d = %d" % (x, y, x*y) for x in list(range(1, 10)) for y in list(range(1, 10))]
+
+print(_list)
+
