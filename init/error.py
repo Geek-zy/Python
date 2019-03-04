@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# -*- coding: UTF-8 -*-
 
-# Python 内置了一套try...except...finally...的错误处理机制
-# 当我们认为某些代码可能会出错时，就可以用try来运行这段代码，如果执行出错，则后续代码不会继续执行，而是直接跳转至错误处理代码，即except语句块，执行完except后，如果有finally语句块，则执行finally语句块，至此，执行完毕 可以没有finally
-# 此外，如果没有错误发生，可以在except语句块后面加一个else，当没有错误发生时，会自动执行else语句
+# Python 内置了一套 try...except...else...finally 的错误处理机制
+
+# 当我们认为某些代码可能会出错时，就可以用 try 来运行这段代码，如果执行出错，则后续代码不会继续执行，而是直接跳转至错误处理代码，即 except 语句块，执行完 except 后，如果有 finally 语句块，则执行 finally 语句块，至此，执行完毕可以没有 finally
+
+# 此外，如果没有错误发生，可以在 except 语句块后面加一个 else，当没有错误发生时，会自动执行 else 语句
+
 try:
-    print('try...')
-    r = 10 / 0 
-    print('result:', r)
-except ZeroDivisionError as e:
-    print('except:', e)
+    print('try...\n')
+    r = 10 / 1
+
+except ZeroDivisionError as e::
+    print('except...\n')
+
+else:   
+    print('else...\n')
+
 finally:
-    print('finally...')
+    print('finally...\n')
+
 print('END')
-
-# 凡是用print()来辅助查看的地方，都可以用断言（assert）来替代
-def foo(s):
-    n = int(s)
-    assert n != 0, 'n 的参数为0'
-    return 10 / n
-
-foo(1)
 
